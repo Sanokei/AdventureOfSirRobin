@@ -30,10 +30,6 @@ public class CharacterManager : MonoBehaviour
         OnCharacterStateChange -= StateChange;
     }
 
-    void Start()
-    {
-        state = CharacterState.Idle;
-    }
 
     private CharacterState _state = CharacterState.Default;
     public CharacterState state
