@@ -227,7 +227,7 @@ MonoBehaviour:
     IsMethodWithParam: 1
     InvokeEventsInEditMode: 0
     TargetObject: {fileID: 0}
-    ArgValue: plant
+    ArgValue: axe
 --- !u!114 &-2450747462527564959
 MonoBehaviour:
   m_ObjectHideFlags: 1

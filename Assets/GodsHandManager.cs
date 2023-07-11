@@ -33,7 +33,7 @@ public class GodsHandManager : MonoBehaviour
         // fine for now ig
         if(self.name == "godhand" && other.transform.tag == "pickable")
         {
-            if(other.name == LookingFor)
+            if(other.name.ToLower() == LookingFor.ToLower())
             {
                 // InventoryTimerManager.Instance.timers[0].Timer(); // dont do this, this will get rid of a heart
                 TimerSuccessEvent?.Invoke();
