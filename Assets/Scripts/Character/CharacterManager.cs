@@ -84,50 +84,7 @@ public class CharacterManager : MonoBehaviour
     }
     void StateChange(CharacterState state)
     {
-        switch(state)
-        {
-            case CharacterState.Idle: 
-                Animators[CharacterState.Idle].gameObject.SetActive(true);
-            break;
-
-            case CharacterState.Jump: 
-                Animators[CharacterState.Jump].gameObject.SetActive(true);
-            break;
-
-            case CharacterState.Fall: 
-                Animators[CharacterState.Fall].gameObject.SetActive(true);
-            break;
-
-            case CharacterState.Run: 
-                Animators[CharacterState.Run].gameObject.SetActive(true);
-            break;
-
-            case CharacterState.TakeHit: 
-                Animators[CharacterState.TakeHit].gameObject.SetActive(true);
-            break;
-
-            case CharacterState.Death: 
-                Animators[CharacterState.Death].gameObject.SetActive(true);
-            break;
-
-            case CharacterState.Attack1: 
-                Animators[CharacterState.Attack1].gameObject.SetActive(true);
-            break;
-
-            case CharacterState.Attack2: 
-                Animators[CharacterState.Attack2].gameObject.SetActive(true);
-            break;
-            case CharacterState.Attack3: 
-                Animators[CharacterState.Attack3].gameObject.SetActive(true);
-            break;
-
-            case CharacterState.Attack4: 
-                Animators[CharacterState.Attack4].gameObject.SetActive(true);
-            break;
-
-            default:
-            break;
-        }
+        Animators[state].gameObject.SetActive(true);
     }
     void ClearFrame()
     {
